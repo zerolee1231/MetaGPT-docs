@@ -24,6 +24,9 @@ jobs:
           node-version: 20
           cache: pnpm
 
+      - name: install lfs
+        run: git lfs install
+
       - run: pnpm install
 
       - name: Run prettier
